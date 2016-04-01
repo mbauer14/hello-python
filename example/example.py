@@ -11,7 +11,7 @@ class ExampleSession(riffle.Domain):
     @riffle.want(str)
     def echo(self, msg):
         print("{}: {}".format(logOutput, msg))
-        return msg
+        return ("{}: {}".format(logOutput, msg))
 
 
 if __name__ == "__main__":

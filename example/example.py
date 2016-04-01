@@ -16,7 +16,7 @@ class ExampleSession(riffle.Domain):
 
 if __name__ == "__main__":
     riffle.SetFabric(os.environ['WS_URL'])
-    
+    print("output: {}".format(logOutput))
     riffle.SetLogLevelInfo()
     domain = os.environ['DOMAIN']
     ExampleSession(domain).join()
